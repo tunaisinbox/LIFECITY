@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eefaff">
+  <title>LIFE CITY — Your Internet, Your Place.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="LIFE CITY ホーム">
+        <span class="brand-mark">L</span>
+        <span><b>LIFE CITY</b><small>Your Internet, Your Place.</small></span>
+      </a>
+      <div class="side-label">MENU</div>
+      <nav class="side-nav">
+        <button class="nav-item active" data-view="home"><span>⌂</span>ホーム</button>
+        <button class="nav-item" data-view="board"><span>▤</span>掲示板</button>
+        <button class="nav-item" data-view="games"><span>▣</span>ゲームセンター</button>
+        <button class="nav-item" data-view="library"><span>▥</span>図書館</button>
+        <button class="nav-item" data-view="studio"><span>✎</span>創作室</button>
+        <button class="nav-item" data-view="community"><span>♧</span>コミュニティ</button>
+        <button class="nav-item" data-view="events"><span>◇</span>イベント</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="ai-mini">
+          <div class="ai-orb">✦</div>
+          <div><b>LIFE CITY AI</b><small>いつでもお話しできます</small></div>
+          <button class="icon-button" data-view="ai" aria-label="AIを開く">›</button>
+        </div>
+        <button class="nav-item" data-view="profile"><span>◉</span>マイページ</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span>設定</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">L</span><b>LIFE CITY</b></div>
+        <div class="breadcrumbs" id="breadcrumbs">ホーム <span>/</span> 施設案内</div>
+        <div class="top-actions">
+          <button class="round-button" aria-label="お知らせ">♧<i></i></button>
+          <button class="profile-chip" data-view="profile"><span class="avatar-dot">☺</span><span>ゲスト</span><span>⌄</span></button>
+        </div>
+      </header>
+
+      <section class="page active" id="view-home">
+        <div class="welcome">
+          <div>
+            <div class="eyebrow"><span class="live-dot"></span> YOUR PLACE ON THE INTERNET</div>
+            <h1>おかえりなさい。</h1>
+            <p>今日は、どこで過ごしますか？<br>話したり、遊んだり、何かを作ったり。自由に過ごそう。</p>
+            <button class="primary-button" data-view="community">街を見てみる <span>→</span></button>
+          </div>
+          <div class="welcome-art" aria-hidden="true">
+            <div class="sun"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+            <div class="city-building b1"></div><div class="city-building b2"></div><div class="city-building b3"></div>
+            <div class="path"></div><div class="tiny-person p1">☺</div><div class="tiny-person p2">☺</div>
+          </div>
+        </div>
+
+        <div class="section-heading"><div><span class="eyebrow">EXPLORE</span><h2>施設を探す</h2></div><button class="text-button" data-view="community">すべて見る →</button></div>
+        <div class="facility-grid">
+          <button class="facility-card blue" data-view="board"><span class="facility-icon">▤</span><span class="card-title">掲示板</span><span class="card-desc">雑談・質問・相談・情報交換</span><span class="card-arrow">↗</span></button>
+          <button class="facility-card violet" data-view="games"><span class="facility-icon">▣</span><span class="card-title">ゲームセンター</span><span class="card-desc">2D・3Dゲームで遊ぼう</span><span class="card-arrow">↗</span></button>
+          <button class="facility-card mint" data-view="library"><span class="facility-icon">▥</span><span class="card-title">図書館</span><span class="card-desc">知識や作品のヒントを見つける</span><span class="card-arrow">↗</span></button>
+          <button class="facility-card peach" data-view="studio"><span class="facility-icon">✎</span><span class="card-title">創作室</span><span class="card-desc">作ったものを展示・共有する</span><span class="card-arrow">↗</span></button>
+          <button class="facility-card aqua" data-view="community"><span class="facility-icon">♧</span><span class="card-title">コミュニティ</span><span class="card-desc">好きなことが同じ人と集まる</span><span class="card-arrow">↗</span></button>
+          <button class="facility-card yellow" data-view="events"><span class="facility-icon">◇</span><span class="card-title">イベント</span><span class="card-desc">街のみんなで楽しむ企画</span><span class="card-arrow">↗</span></button>
+        </div>
+
+        <div class="lower-grid">
+          <div class="panel">
+            <div class="panel-heading"><div><span class="eyebrow">FROM THE CITY</span><h2>街のお知らせ</h2></div><span class="soft-tag">お知らせ</span></div>
+            <div class="notice"><span class="notice-icon">✦</span><div><b>LIFE CITYへようこそ</b><p>ここは、好きな場所で自由に過ごせるインターネットの街です。</p><small>運営からのお知らせ</small></div></div>
+            <div class="notice"><span class="notice-icon pale">＋</span><div><b>新しい施設を準備中</b><p>これから少しずつ、できることを増やしていきます。</p><small>開発情報</small></div></div>
+          </div>
+          <div class="ai-panel">
+            <div class="ai-orb big">✦</div><span class="eyebrow">A LITTLE COMPANION</span>
+            <h2>話し相手がほしいときは。</h2>
+            <p>雑談したり、趣味の話をしたり。LIFE CITY AIを準備しています。</p>
+            <button class="secondary-button" data-view="ai">AIについて <span>→</span></button>
+          </div>
+        </div>
+        <footer>© LIFE CITY <span>・</span> Your Internet, Your Place.</footer>
+      </section>
+
+      <section class="page" id="view-generic">
+        <div class="page-title"><span class="eyebrow" id="view-eyebrow">LIFE CITY</span><h1 id="view-title">施設</h1><p id="view-description">この施設は準備中です。</p></div>
+        <div class="placeholder-panel"><div class="placeholder-symbol" id="placeholder-symbol">✦</div><h2 id="placeholder-title">ただいま準備中</h2><p id="placeholder-copy">この機能は、今後の開発で追加する予定です。</p><button class="secondary-button" data-view="home">ホームに戻る <span>→</span></button></div>
+      </section>
+
+      <section class="page" id="view-ai">
+        <div class="page-title"><span class="eyebrow">A LITTLE COMPANION</span><h1>LIFE CITY AI</h1><p>話し相手がほしいとき、気軽に話せる優しいAIを目指しています。</p></div>
+        <div class="ai-coming"><div class="ai-orb huge">✦</div><h2>いつでも、気軽にお話ししよう。</h2><p>雑談、趣味の話、アイデア探し。AIとの会話機能は現在準備中です。</p><span class="soft-tag">AI会話機能は未実装です</span></div>
+      </section>
+    </main>
+  </div>
+  <nav class="mobile-nav">
+    <button class="active" data-view="home"><span>⌂</span>ホーム</button>
+    <button data-view="board"><span>▤</span>掲示板</button>
+    <button data-view="games"><span>▣</span>ゲーム</button>
+    <button data-view="ai"><span>✦</span>AI</button>
+    <button data-view="profile"><span>◉</span>マイページ</button>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
