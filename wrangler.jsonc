@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "lifecity",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-02",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "life-city-db",
+      "database_id": "6229e07b-8963-4784-971f-fb2affb71a25"
+    }
+  ]
+}
