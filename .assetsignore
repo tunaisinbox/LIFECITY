@@ -1,0 +1,6 @@
+src/**
+wrangler.jsonc
+.assetsignore
+README-ADD.txt
+.git/**
+.github/**
